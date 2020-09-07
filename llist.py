@@ -28,6 +28,10 @@ class SingleLinkedList:
                 current = current.next
             current.next = newNode
 
+    def insertNodeAtStart(self, newNode: Node):
+        newNode.next = self.head
+        self.head = newNode
+
 
 if __name__ == "__main__":
     ll = SingleLinkedList()
@@ -36,4 +40,6 @@ if __name__ == "__main__":
     ll.insertNodeAtEnd(Node(data=3))
     ll.printLinkedList()
     ll.insertNodeAtEnd(Node(data=33))
+    ll.printLinkedList()
+    ll.insertNodeAtStart(Node(data=6))
     ll.printLinkedList()
