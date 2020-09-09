@@ -15,7 +15,11 @@ class SingleLinkedList:
         'return all items in SingleLinkedList'
         current = self.head
         outputList = []
+<<<<<<< HEAD:src/llist.py
         while current: # != None
+=======
+        while current != None:
+>>>>>>> 91a69b0f3040232e26ca72d55eca05837e1a9d47:src/llist.py
             outputList.append(current.data)
             current = current.next
         return outputList
@@ -60,5 +64,3 @@ class SingleLinkedList:
             previous = current
             current = temp
         self.head = previous
-        
-

@@ -37,6 +37,6 @@ def test_SingleLinkedList(llist: SingleLinkedList):
     llist1.reverse()
     assert llist1.get_items() == ['test', 3, 10, 'hello', 6, 'new 1st'], llist1.get_items()
 
+
 if __name__ == "__main__":
     test_SingleLinkedList(llist=llist1)
-
