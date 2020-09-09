@@ -1,2 +1,2 @@
 language = "Python"
-run = "python llist.py"
+run = "python tests.py"
